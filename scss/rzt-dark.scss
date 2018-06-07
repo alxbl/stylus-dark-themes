@@ -1,6 +1,8 @@
 // =========================
 // Constants and definitions
 // =========================
+// TODO: Should probably make this more SASS-like.
+// Owell.
 
 $fg-color: #f1f1f1;
 $bg-color: #212121;
@@ -17,6 +19,8 @@ $first: gold;
 $second: silver;
 $third: copper;
 $claranet-color: $accent-color;
+$gift-color: purple;
+$must-read-color: $error-color;
 
 // Shades
 $black: black;
@@ -40,6 +44,16 @@ $font-code: "Courier New", Courier, monospace;
 }
 .claranet { color: $claranet-color!important; } // Claranet special color
 div.jumbotron[style^="border: 1px"] { border: 0!important; } // Shoutbox border
+*[style^="color: #65be00"] { color: $success-color!important; } // Green highlights
+*[style^="color: #ac0000"] { color: $error-color!important; } // Error highlights
+.glyphicon-fire { color: $must-read-color; }
+.glyphicon-gift { color: $gift-color; }
+div[style^="word-wrap"] {
+    padding: 15px!important;
+    color: $fg-color!important;
+    font-family: $font-code!important;
+    background: $translucent!important;
+}
 // ===
 
 .overlay-bg { background-color: black; }
@@ -78,7 +92,19 @@ nav { box-shadow: 0 0 10px $dark; }
 .jumbotron { box-shadow: 0 0 10px $shadow; background-color: $dark!important; }
 .panel, .panel-default { border: 0; background-color: $darker; }
 hr { border-color: $translucent!important; }
+
+.footer {
+    background-color: $black;
+    color: #9d9d9d;
+}
+
+// Gold and leaderboard
 .gold { color: $gold-color; }
+.star_1 { color: $first; }
+.star_2 { color: $second; }
+.star_3 { color: $third; }
+// ==
+
 
 // Controls
 .btn-success {
@@ -103,6 +129,11 @@ hr { border-color: $translucent!important; }
     border: 0;
 }
 
+a {
+    color: $fg-color;
+    &:hover { color: darken($accent-color, 5%); }
+}
+
 .twitter-link { color: $twitter-color; }
 // ==
 
@@ -112,28 +143,32 @@ thead { background: $darker; box-shadow: 0 5px 7px -7px $shadow; border-bottom: 
 .table-striped>tbody>tr:nth-of-type(odd) { background: $translucent; }
 th, td { border: none!important; }
 
-.flag_wrapper { }
 
-
-a {
-    color: $fg-color;
-    &:hover { color: darken($accent-color, 5%); }
-}
 
 .a-green { color: $accent-color; }
 .red { color: $error-color; }
 
 // List groups
 .list-group-item.active {
-    border-color: #379000;
-    background-color: #65be00;
-    &:hover { background-color: #379000; }
+    border: 0;
+    background-color: $accent-color;
+    &:hover { background-color: $accent-color; }
 }
 
+a.list-group-item { color: $fg-color; }
+.list-group-item {
+    background: $translucent;
+    border: 0;
+}
+
+a.list-group-item:focus, a.list-group-item:hover {
+    background: opacify($translucent, 0.2);
+    color: $fg-color;
+}
+// ==
+
 // Pagination
-
 li .active { background-color: $accent-color; }
-
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
     background-color: $accent-color;
 }
@@ -148,20 +183,14 @@ li .active { background-color: $accent-color; }
     color: lighten($fg-color, 5%)!important;
     background: opacify($translucent, 0.2);
 }
+// ==
 
 .challenge-wrapper {
     background-color: $translucent;
     border: 0;
 }
 
+.flag_wrapper { }
+
 .console_text { font-family: $font-code; }
-
-.star_1 { color: $first; }
-.star_2 { color: $second; }
-.star_3 { color: $third; }
-
-.footer {
-    background-color: $black;
-    color: #9d9d9d;
-}
 
