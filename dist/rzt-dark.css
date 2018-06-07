@@ -1,0 +1,212 @@
+.ssl-warning {
+  color: #f1f1f1 !important;
+  background: #424242 !important; }
+
+.claranet {
+  color: #df1a21 !important; }
+
+div.jumbotron[style^="border: 1px"] {
+  border: 0 !important; }
+
+*[style^="color: #65be00"] {
+  color: #7cb342 !important; }
+
+*[style^="color: #ac0000"] {
+  color: #e53935 !important; }
+
+.glyphicon-fire {
+  color: #e53935; }
+
+.glyphicon-gift {
+  color: #b388ff; }
+
+div[style^="word-wrap"] {
+  padding: 15px !important;
+  color: #f1f1f1 !important;
+  font-family: "Courier New", Courier, monospace !important;
+  background: rgba(255, 255, 255, 0.1) !important; }
+
+.overlay-bg {
+  background-color: black; }
+
+.code-highlight {
+  background-color: #f9f2f4;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  padding: 10px;
+  border: 1px solid #dfdfdf; }
+
+.overlay-msg {
+  position: fixed;
+  background-color: white;
+  padding: 35px;
+  border-radius: 5px;
+  z-index: 20000;
+  width: 30%;
+  left: 50%;
+  margin-top: 100px;
+  margin-left: -15%; }
+
+.reset-passwd {
+  color: #3c9ce7;
+  font-weight: bold;
+  font-size: 1cm;
+  margin-left: 30px; }
+
+body {
+  background: #212121;
+  color: #f1f1f1;
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+nav {
+  box-shadow: 0 0 10px black;
+  border-color: black !important; }
+
+.jumbotron {
+  box-shadow: 0 0 10px black;
+  background-color: #424242 !important; }
+
+.panel, .panel-default {
+  border: 0;
+  background-color: #626262; }
+
+hr {
+  border-color: rgba(255, 255, 255, 0.1) !important; }
+
+td hr {
+  display: none; }
+
+.alert-danger {
+  border: 0;
+  background-color: #f1928f;
+  color: #cd1e1a; }
+
+.alert-success {
+  border: 0;
+  background-color: #7cb342;
+  color: #628e34; }
+
+.footer {
+  background-color: black;
+  color: #9d9d9d; }
+
+.gold {
+  color: #ffc107; }
+
+.star_1 {
+  color: gold; }
+
+.star_2 {
+  color: silver; }
+
+.star_3 {
+  color: copper; }
+
+.btn-success {
+  background-color: #7cb342;
+  border: 0; }
+  .btn-success:hover {
+    background-color: #6fa03b; }
+
+.btn-danger {
+  background-color: #e53935;
+  border: 0; }
+  .btn-danger:hover {
+    background-color: #e2231e; }
+
+.btn-grey, .btn-top {
+  color: #f1f1f1;
+  border: 0; }
+  .btn-grey:hover, .btn-top:hover {
+    color: #fefefe; }
+
+.btn-warning {
+  background-color: #ff8f00;
+  border: 0; }
+  .btn-warning:hover {
+    background-color: #e68100; }
+
+.form-control:not(.btn), input, textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  color: #f1f1f1;
+  border: 0; }
+
+a {
+  color: #f1f1f1; }
+  a:hover {
+    color: #6fa03b; }
+
+.twitter-link {
+  color: #55acee; }
+
+.dropdown-menu {
+  background: #626262; }
+  .dropdown-menu > li > a {
+    color: #f1f1f1; }
+    .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+      background-color: #555555;
+      color: #f1f1f1; }
+
+table.table-bordered {
+  border: 0; }
+
+thead {
+  background: #626262;
+  box-shadow: 0 5px 7px -7px black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background: rgba(255, 255, 255, 0.1); }
+
+th, td {
+  border: none !important; }
+
+.panel .table:not(.table-striped) tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.a-green {
+  color: #7cb342; }
+
+.red {
+  color: #e53935; }
+
+.list-group-item.active {
+  border: 0;
+  background-color: #7cb342; }
+  .list-group-item.active:hover {
+    background-color: #7cb342; }
+
+a.list-group-item {
+  color: #f1f1f1; }
+
+.list-group-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 0; }
+
+a.list-group-item:focus, a.list-group-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #f1f1f1; }
+
+li .active {
+  background-color: #7cb342; }
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  background-color: #7cb342; }
+
+.pagination > li > a, .pagination > li > span,
+.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+  color: #f1f1f1 !important;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0; }
+
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+  color: #fefefe !important;
+  background: rgba(255, 255, 255, 0.3); }
+
+.challenge-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0; }
+
+.console_text {
+  font-family: "Courier New", Courier, monospace; }

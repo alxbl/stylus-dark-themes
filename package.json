@@ -4,7 +4,8 @@
   "description": "Various userstyles for stylus.",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass -w scss -o dist & serve -l tcp://0.0.0.0:3000"
+    "start": "node-sass -w scss -o dist & serve -l tcp://0.0.0.0:3000",
+    "build": "node-sass scss -o dist"
   },
   "repository": {
     "type": "git",
