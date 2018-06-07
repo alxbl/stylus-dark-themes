@@ -21,8 +21,8 @@ For convenience, the latest build is checked-in.
 
 ## Development
 
-   npm install
-   npm start
+    npm install
+    npm start
 
 Then create a stylus theme with `@import "http://localhost:3000/dist/<your-stylesheet>.css";`
 
