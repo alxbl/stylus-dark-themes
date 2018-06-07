@@ -2,24 +2,23 @@
 // Constants and definitions
 // =========================
 // TODO: Should probably make this more SASS-like.
-// Owell.
 
 $fg-color: #f1f1f1;
 $bg-color: #212121;
 
 // Highlights
-$accent-color: #56af00; // Main accent
+$accent-color: #7cb342; // Main accent
 $success-color: $accent-color;
-$warn-color: orange;
-$error-color: #c9302c;
+$warn-color: #ff8f00;
+$error-color: #e53935;
 $info-color: #55acee;
 $twitter-color: $info-color;
-$gold-color: gold;
+$gold-color: #ffc107;
 $first: gold;
 $second: silver;
 $third: copper;
-$claranet-color: $accent-color;
-$gift-color: purple;
+$claranet-color: #df1a21;
+$gift-color: #b388ff;
 $must-read-color: $error-color;
 
 // Shades
@@ -88,10 +87,23 @@ div[style^="word-wrap"] {
 
 // Page Layout
 body { background: $bg-color; color: $fg-color; font-family: $font-face }
-nav { box-shadow: 0 0 10px $dark; }
+nav { box-shadow: 0 0 10px $shadow; border-color: $shadow!important; }
 .jumbotron { box-shadow: 0 0 10px $shadow; background-color: $dark!important; }
 .panel, .panel-default { border: 0; background-color: $darker; }
 hr { border-color: $translucent!important; }
+td hr { display: none; } // Hide About us table ruler.
+
+.alert-danger {
+    border: 0;
+    background-color: lighten($error-color, 20%);
+    color: darken($error-color, 10%);
+}
+
+.alert-success {
+    border: 0;
+    background-color: $success-color;
+    color: darken($success-color, 10%);
+}
 
 .footer {
     background-color: $black;
@@ -105,21 +117,29 @@ hr { border-color: $translucent!important; }
 .star_3 { color: $third; }
 // ==
 
-
 // Controls
 .btn-success {
     background-color: $accent-color;
     &:hover { background-color: darken($accent-color, 5%); }
+    border: 0
 }
 
 .btn-danger {
     background-color: $error-color;
     &:hover { background-color: darken($error-color, 5%); }
+    border: 0
 }
 
 .btn-grey, .btn-top {
     color: $fg-color;
     &:hover { color: lighten($fg-color, 5%); }
+    border: 0
+}
+
+.btn-warning {
+    background-color: $warn-color;
+    &:hover { background-color: darken($warn-color, 5%); }
+    border: 0
 }
 
 .form-control:not(.btn), input, textarea {
@@ -135,6 +155,17 @@ a {
 }
 
 .twitter-link { color: $twitter-color; }
+
+.dropdown-menu {
+    background: $darker;
+    >li>a {
+        color: $fg-color;
+        &:focus, &:hover {
+            background-color: darken($darker, 5%);
+            color: $fg-color;
+        }
+    }
+}
 // ==
 
 // Tabular data
@@ -142,8 +173,8 @@ table.table-bordered { border: 0; }
 thead { background: $darker; box-shadow: 0 5px 7px -7px $shadow; border-bottom: 1px solid $translucent; }
 .table-striped>tbody>tr:nth-of-type(odd) { background: $translucent; }
 th, td { border: none!important; }
-
-
+// About us: roster separator
+.panel .table:not(.table-striped) tr { border-bottom: 1px solid $translucent; }
 
 .a-green { color: $accent-color; }
 .red { color: $error-color; }
@@ -190,7 +221,7 @@ li .active { background-color: $accent-color; }
     border: 0;
 }
 
-.flag_wrapper { }
+.flag_wrapper { } // What is this used for?
 
 .console_text { font-family: $font-code; }
 
