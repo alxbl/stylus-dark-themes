@@ -1,0 +1,31 @@
+{
+  "name": "stylus-themes",
+  "version": "1.0.0",
+  "description": "Various userstyles for stylus.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass -w scss -o dist & serve -l tcp://0.0.0.0:3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxbl/stylus-themes.git"
+  },
+  "keywords": [
+    "styulus",
+    "css",
+    "userstyles",
+    "custom",
+    "themes"
+  ],
+  "author": "Alexandre Beaulieu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alxbl/stylus-themes/issues"
+  },
+  "homepage": "https://github.com/alxbl/stylus-themes#readme",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "sass": "^1.5.1",
+    "serve": "^8.1.1"
+  }
+}
