@@ -149,6 +149,9 @@ td hr { display: none; } // Hide About us table ruler.
     border: 0;
 }
 
+select { padding: 5px; margin-bottom: 5px; }
+option { background: $darker; }
+
 a {
     color: $fg-color;
     &:hover { color: darken($accent-color, 5%); }

@@ -132,6 +132,13 @@ td hr {
   color: #f1f1f1;
   border: 0; }
 
+select {
+  padding: 5px;
+  margin-bottom: 5px; }
+
+option {
+  background: #626262; }
+
 a {
   color: #f1f1f1; }
   a:hover {
