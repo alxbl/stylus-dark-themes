@@ -9,6 +9,10 @@ Currently included are:
 - https://ringzer0team.com
 - https://docs.python.org
 
+Where syntax highlighting is required, I like to use [dracula][1]. It has an
+awesome retrofuture feel to it and it's nice on the eyes.
+
+[1]: https://draculatheme.com/
 
 ## Build
 
