@@ -6,7 +6,8 @@ that work well at night with minor or no layout changes.
 
 
 Currently included are:
-- ringzer0team.com
+- https://ringzer0team.com
+- https://docs.python.org
 
 
 ## Build
