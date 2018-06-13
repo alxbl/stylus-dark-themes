@@ -43,7 +43,7 @@ div#sidebarbutton {
     background-color: $expander!important;
     color: $fg-color!important;
 }
-
+table.indextable tr.cap { background : $darker; }
 table.docutils {
     td { background: rgba(255,255,255,0.1); }
     th { background: $darker; }
