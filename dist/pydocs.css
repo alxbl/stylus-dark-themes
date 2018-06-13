@@ -40,7 +40,7 @@ table.docutils th {
 table.docutils td, table.docutils th {
   border: 1px solid #212121 !important; }
 
-pre, code {
+pre, code, div.note, div.seealso {
   background-color: rgba(255, 255, 255, 0.1) !important;
   border: 1px solid #212121 !important; }
 

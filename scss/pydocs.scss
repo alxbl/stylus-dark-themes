@@ -5,6 +5,7 @@
 $bg-color: #212121;
 $fg-color: #f1f1f1;
 $accent-color: #1793d1;
+$highlight-color: #716dabd1;
 
 $body-bg-color: #313131;
 $darker: #616161;
@@ -31,7 +32,7 @@ div.body, div.document, div.related {
     }
 }
 
-span.highlighted, dt:target { background: #716dabd1; }
+span.highlighted, dt:target { background: $highlight-color; }
 
 div.sphinxsidebar {
     background-color: $expander;
@@ -51,7 +52,7 @@ table.docutils {
 }
 
 // Code highlighting
-pre, code {
+pre, code, div.note, div.seealso {
     background-color: rgba(255,255,255,0.1)!important;
     border: 1px solid $bg-color!important;
 }
