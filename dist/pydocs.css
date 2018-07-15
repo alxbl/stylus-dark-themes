@@ -24,6 +24,12 @@ div.sphinxsidebar {
   div.sphinxsidebar h3 a {
     color: #f1f1f1; }
 
+.deprecated {
+  background-color: #501010; }
+
+.warning {
+  background-color: #804818; }
+
 div#sidebarbutton {
   background-color: #414141 !important;
   color: #f1f1f1 !important; }

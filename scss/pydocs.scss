@@ -6,6 +6,8 @@ $bg-color: #212121;
 $fg-color: #f1f1f1;
 $accent-color: #1793d1;
 $highlight-color: #716dabd1;
+$warning-color: #804818;
+$deprecated-color: #501010;
 
 $body-bg-color: #313131;
 $darker: #616161;
@@ -39,6 +41,9 @@ div.sphinxsidebar {
     h1, h2, h3, h4, h5, h6 { background: none; } // Override div.document
     h3 a { color: $fg-color; }
 }
+
+.deprecated { background-color: $deprecated-color; }
+.warning { background-color: $warning-color; }
 
 div#sidebarbutton {
     background-color: $expander!important;
